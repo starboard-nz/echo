@@ -1,3 +1,3 @@
-module github.com/lp117937/echo
+module github.com/starboard-nz/echo
 
 go 1.18
