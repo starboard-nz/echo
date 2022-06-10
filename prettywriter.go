@@ -28,7 +28,7 @@ func (p *PrettyWriter) ts() string {
 	return time.Now().Format(p.TimeFormat)
 }
 
-func (p *PrettyWriter) Printf(format string, args ...any) {
+func (p *PrettyWriter) Printf(format string, args ...interface{}) {
 	if p.Go {
 		_, err := fmt.Fprintf(p.writer, "// ")
 		if err != nil {
